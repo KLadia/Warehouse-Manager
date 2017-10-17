@@ -25,6 +25,6 @@ Software Fundamentals Course
 * **Esteban Tavel** - Gui and UML
 
 ## Licensing
-This project is licensed under the Apache License 2.0 - see the [LICENSE.md](LICENSE.md) file for details
+This project is licensed under the Apache License 2.0 - see the [LICENSE.md](https://github.com/KLadia/Warehouse-Manager/blob/master/LICENSE) file for details
 
 ## Acknowledgements
