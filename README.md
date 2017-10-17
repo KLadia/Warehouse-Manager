@@ -11,4 +11,4 @@ Software Fundamentals Course
 * **Hunter Cagnon** - Project manager and GUI
 * **Daniela Fuenzalida** - SQA and back-end
 * **Kristin Ladia** - Back-end and SQA
-* **Esteban Tavel** - Gui and UML
+* **Esteban Tavel** - **_GUI_** and UML
