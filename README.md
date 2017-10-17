@@ -1,8 +1,19 @@
 # Warehouse-Manager
 Software Fundamentals Course
 
-## Installing
+## Getting Started
+### Prerequisites
+### Installing
 
+## Running Tests
+
+## Deployment
+
+## Built With
+
+## Contributing
+
+## Versioning
 
 ## Authors
 
@@ -12,3 +23,8 @@ Software Fundamentals Course
 * **Daniela Fuenzalida** - SQA and back-end
 * **Kristin Ladia** - Back-end and SQA
 * **Esteban Tavel** - Gui and UML
+
+## Licensing
+This project is licensed under the Apache License 2.0 - see the [LICENSE.md](LICENSE.md) file for details
+
+## Acknowledgements
