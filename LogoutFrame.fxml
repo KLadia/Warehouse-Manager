@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Text?>
+
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="138.0" prefWidth="243.0" xmlns="http://javafx.com/javafx/9" xmlns:fx="http://javafx.com/fxml/1" fx:controller="warehousemanagementsystem.LogoutFrameController">
+   <children>
+      <Text layoutX="53.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="You have successfully" />
+      <Text layoutX="89.0" layoutY="57.0" strokeType="OUTSIDE" strokeWidth="0.0" text="logged out" />
+      <Button layoutX="71.0" layoutY="76.0" mnemonicParsing="false" onAction="#handleBackToLogin" text="Back to Login" />
+   </children>
+</Pane>

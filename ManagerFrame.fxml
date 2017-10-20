@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/9" xmlns:fx="http://javafx.com/fxml/1" fx:controller="warehousemanagementsystem.ManagerFrameController">
+   <children>
+      <TabPane layoutY="40.0" prefHeight="359.0" prefWidth="600.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="Dashboard">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <SplitPane dividerPositions="0.5" prefHeight="330.0" prefWidth="600.0">
+                          <items>
+                            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                                 <children>
+                                    <DatePicker layoutX="87.0" layoutY="8.0" />
+                                    <Text fill="#4a4a4a" layoutX="14.0" layoutY="26.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Today" />
+                                 </children>
+                              </AnchorPane>
+                            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                                 <children>
+                                    <Text fill="#4a4a4a" layoutX="14.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Upcoming" />
+                                 </children>
+                              </AnchorPane>
+                          </items>
+                        </SplitPane>
+                     </children></AnchorPane>
+            </content>
+          </Tab>
+          <Tab text="Inventory Status">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <BarChart layoutY="46.0" prefHeight="279.0" prefWidth="600.0">
+                          <xAxis>
+                            <CategoryAxis side="BOTTOM" />
+                          </xAxis>
+                          <yAxis>
+                            <NumberAxis side="LEFT" />
+                          </yAxis>
+                        </BarChart>
+                        <ProgressBar layoutX="200.0" layoutY="14.0" prefWidth="200.0" progress="0.0" />
+                        <Text fill="#4a4a4a" layoutX="110.0" layoutY="29.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Overall Status" />
+                        <Text fill="#4a4a4a" layoutX="403.0" layoutY="29.0" strokeType="OUTSIDE" strokeWidth="0.0" text="as of 10/11/2017" />
+                        <Hyperlink layoutX="455.0" layoutY="300.0" text="load additional data" />
+                        <Text fill="#4a4a4a" layoutX="53.0" layoutY="317.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Component Status" />
+                     </children></AnchorPane>
+            </content>
+          </Tab>
+            <Tab text="Import Status">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+              </content>
+            </Tab>
+            <Tab text="Export Status">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+              </content>
+            </Tab>
+            <Tab text="Admin Functions">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+              </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+      <ToolBar prefHeight="40.0" prefWidth="600.0">
+         <items>
+            <Text fill="#4a4a4a" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome, Manager">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Text>
+            <Hyperlink onAction="#handleLogout" text="logout" />
+         </items>
+      </ToolBar>
+   </children>
+</Pane>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.layout.Pane?>
+
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="199.0" prefWidth="309.0" xmlns="http://javafx.com/javafx/9" xmlns:fx="http://javafx.com/fxml/1" fx:controller="warehousemanagementsystem.LoadingFrameController">
+   <children>
+      <ProgressBar layoutX="55.0" layoutY="90.0" prefWidth="200.0" progress="0.0" />
+   </children>
+</Pane>

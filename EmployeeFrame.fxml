@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.ScrollBar?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/9" xmlns:fx="http://javafx.com/fxml/1" fx:controller="warehousemanagementsystem.EmployeeFrameController">
+   <children>
+      <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0">
+         <children>
+            <TabPane layoutY="40.0" prefHeight="359.0" prefWidth="600.0" tabClosingPolicy="UNAVAILABLE">
+               <tabs>
+                  <Tab text="Dashboard">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <SplitPane dividerPositions="0.5" prefHeight="328.0" prefWidth="600.0">
+                                <items>
+                                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                                       <children>
+                                          <DatePicker layoutX="95.0" layoutY="10.0" />
+                                          <Text fill="#4a4a4a" layoutX="14.0" layoutY="28.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Today" />
+                                       </children>
+                                    </AnchorPane>
+                                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                                       <children>
+                                          <SplitPane dividerPositions="0.6184615384615385" orientation="VERTICAL" prefHeight="327.0" prefWidth="296.0">
+                                            <items>
+                                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                                                   <children>
+                                                      <Text fill="#4a4a4a" layoutX="14.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Manager Communications" />
+                                                   </children>
+                                                </AnchorPane>
+                                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                                                   <children>
+                                                      <Text fill="#4a4a4a" layoutX="14.0" layoutY="19.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Upcoming" />
+                                                   </children>
+                                                </AnchorPane>
+                                            </items>
+                                          </SplitPane>
+                                       </children>
+                                    </AnchorPane>
+                                </items>
+                              </SplitPane>
+                           </children></AnchorPane>
+                     </content>
+                  </Tab>
+                  <Tab text="My Imports">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <ScrollBar layoutX="583.0" orientation="VERTICAL" prefHeight="327.0" prefWidth="17.0" />
+                           </children></AnchorPane>
+                     </content>
+                  </Tab>
+                  <Tab text="My Exports">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                     </content>
+                  </Tab>
+                  <Tab text="Tools">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                     </content>
+                  </Tab>
+               </tabs>
+            </TabPane>
+            <ToolBar prefHeight="40.0" prefWidth="600.0">
+               <items>
+                  <Text fill="#4a4a4a" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome, Employee">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Text>
+                  <Hyperlink onAction="#handleLogout" text="logout" />
+               </items>
+            </ToolBar>
+         </children>
+      </Pane>
+   </children>
+</Pane>
