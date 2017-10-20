@@ -19,8 +19,8 @@ Software Fundamentals Course
 
 * **Andrew Aran** - GUI and back-end
 * **Chelsea Atkins** - GUI and web development
-* **Hunter Cagnon** - Project manager and GUI
-* **Daniela Fuenzalida** - SQA and back-end
+* **Hunter Cagnon** - Project manager and back-end
+* **Daniela Fuenzalida** - SQA and GUI
 * **Kristin Ladia** - Back-end and SQA
 * **Esteban Tavel** - **_GUI_** and UML
 
