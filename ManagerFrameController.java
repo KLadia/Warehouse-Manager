@@ -33,6 +33,16 @@ public class ManagerFrameController implements Initializable {
         getLogoutFrame.show();
     }
     
+    @FXML
+    private void handleCreateAccount(ActionEvent event) throws IOException {
+        Parent createAccountFrame = FXMLLoader.load(getClass().getResource("CreateAccountFrame.fxml"));
+        Scene createAccountScene = new Scene(createAccountFrame);
+        Stage getCreateAccountFrame = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        getCreateAccountFrame.setScene(createAccountScene);
+        getCreateAccountFrame.show();
+        
+    }
+    
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         // TODO

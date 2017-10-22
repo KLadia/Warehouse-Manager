@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
 <?import javafx.scene.control.PasswordField?>
 <?import javafx.scene.control.Tab?>
 <?import javafx.scene.control.TabPane?>
@@ -18,13 +19,14 @@
               <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                      <children>
                           <Button fx:id="button" layoutX="207.0" layoutY="189.0" onAction="#handleEmployeeLogin" text="Login" />
-                        <PasswordField layoutX="150.0" layoutY="145.0" />
-                        <TextField layoutX="149.0" layoutY="107.0" />
+                        <PasswordField fx:id="passwordFieldEmp" layoutX="150.0" layoutY="145.0" promptText="Password" />
+                        <TextField fx:id="userNameFieldEmp" layoutX="149.0" layoutY="107.0" promptText="Username" />
                         <Text fill="#4a4a4a" layoutX="54.0" layoutY="73.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Employee Login">
                            <font>
                               <Font size="48.0" />
                            </font>
                         </Text>
+                        <Label fx:id="emptyFieldsEmp" layoutX="157.0" layoutY="228.0" prefHeight="17.0" prefWidth="154.0" textFill="RED" />
                      </children>
                   </AnchorPane>
             </content>
@@ -36,8 +38,8 @@
                         <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                            <children>
                               <Button fx:id="button1" layoutX="207.0" layoutY="189.0" onAction="#handleManagerLogin" text="Login" />
-                              <PasswordField layoutX="150.0" layoutY="145.0" onAction="#handleCreateAccount" />
-                              <TextField layoutX="149.0" layoutY="107.0" onAction="#handleCreateAccount" />
+                              <PasswordField fx:id="passwordField" layoutX="150.0" layoutY="145.0" promptText="Password" />
+                              <TextField fx:id="userNameField" layoutX="149.0" layoutY="107.0" promptText="Username" />
                               <Text fill="#4a4a4a" layoutX="64.0" layoutY="73.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Manager Login">
                                  <font>
                                     <Font size="48.0" />
@@ -45,7 +47,8 @@
                               </Text>
                            </children>
                         </AnchorPane>
-                        <Button layoutX="176.0" layoutY="231.0" mnemonicParsing="false" onAction="#handleCreateAccount" text="Create Account" />
+                        <Label fx:id="notification" layoutX="169.0" layoutY="228.0" prefHeight="17.0" prefWidth="131.0" textFill="RED" />
+                        <Label fx:id="incorrectInfo" layoutX="153.0" layoutY="228.0" prefHeight="17.0" prefWidth="160.0" textFill="RED" />
                      </children>
                   </AnchorPane>
             </content>

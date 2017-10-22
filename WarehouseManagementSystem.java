@@ -5,6 +5,9 @@
  */
 package warehousemanagementsystem;
 
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileReader;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -26,12 +29,22 @@ public class WarehouseManagementSystem extends Application {
         stage.setScene(scene);
         stage.show();
     }
-
-    /**
-     * @param args the command line arguments
-     */
+    
     public static void main(String[] args) {
         launch(args);
     }
     
+    private void readFile(){
+
+        File storedData = new File("StoredData.txt");
+        try{
+            FileReader readStoredData = new FileReader(storedData);
+            BufferedReader br = new BufferedReader(readStoredData);
+            while(br.ready()){
+                System.out.println(br.readLine());
+            }
+        } catch(Exception e){
+            System.out.println(e);
+        }
+    }
 }

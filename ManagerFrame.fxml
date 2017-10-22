@@ -73,7 +73,14 @@
             </Tab>
             <Tab text="Admin Functions">
               <content>
-                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Hyperlink layoutX="14.0" layoutY="14.0" onAction="#handleCreateAccount" text="Create a new account" />
+                        <Hyperlink layoutX="13.0" layoutY="114.0" text="Create announcement" />
+                        <Hyperlink layoutX="14.0" layoutY="39.0" text="Assign employee task" />
+                        <Hyperlink layoutX="14.0" layoutY="89.0" text="Remove employee" />
+                        <Hyperlink layoutX="14.0" layoutY="64.0" text="Add to calendar" />
+                     </children></AnchorPane>
               </content>
             </Tab>
         </tabs>
