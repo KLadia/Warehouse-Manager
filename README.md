@@ -1,6 +1,9 @@
 # Warehouse-Manager 
+
 Version 1.0.0 12/14/17
+
 by Crick E.T. (Tuesday 5)
+
 Software Fundamentals Course- CEN 3031
 
 This software is a warehouse management system that organizes employee tasks and imports/exports. The system implements a to-do list, communication feeds, a log of imports and exports, and other managerial tasks. 
